@@ -1,10 +1,4 @@
-> ***This theme isn't maintained anymore. Please use https://github.com/loikein/hugo-tufte, note that it is has been modified quite a bit but at least it is up to date.***
-
 # Tufte Hugo Theme
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
-[![build github pages](https://github.com/slashformotion/hugo-tufte/actions/workflows/build-site-ghpages.yml/badge.svg)](https://github.com/slashformotion/hugo-tufte/actions/workflows/build-site-ghpages.yml)
-
-
 
 Hugo-Tufte is a minimalist blog-like theme for the
 [static site generator Hugo](https://gohugo.io) that
@@ -13,7 +7,10 @@ attempts to be a faithful implementation of the
 It supports mathematical typesetting via [katex](https://katex.org/) or [MathJax](https://www.mathjax.org).
 By utilizing copious partial templates the theme is largely customizable.
 
-This is a fork of the original [hugo-tufte](https://github.com/shawnohare/hugo-tufte). 
+- Original repository: [shawnohare/hugo-tufte](https://github.com/shawnohare/hugo-tufte)
+- First fork: [slashformotion/hugo-tufte](https://github.com/slashformotion/hugo-tufte)
+- Second fork: This repository
+- You're probably looking for [loikein/hugo-tufte](https://github.com/loikein/hugo-tufte)
 
 ## Quickstart
 
@@ -157,7 +154,7 @@ support all the features present in the
 - `marginnote`
   - **Description**: Wrap text to produce a numberless margin note.
   - Usage: `{{< marginnote >}}...{{< /marginnote >}}`
-  - **Example**: 
+  - **Example**:
   ```html
   {{< marginnote >}}Some marginnote{{< /marginnote>}}
   ```
@@ -178,8 +175,7 @@ support all the features present in the
   - **Description**: Wrap text to produce an automatically numbered sidenote.
   - **Usage**: identical to `marginnote`
   `{{< sidenote >}}...{{< /sidenote >}}`
-  - **Example**: 
+  - **Example**:
   ```html
   {{< sidenote >}}Some sidenote{{< /sidenote >}}
   ```
-
