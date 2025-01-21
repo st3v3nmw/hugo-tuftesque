@@ -2,14 +2,14 @@
 		<hr>
 
     <div class="previous-post" style="display:inline-block;">
-      {{ if .PrevPage }}
-      <a class="link-reverse" href="{{ .PrevPage.Permalink }}?ref=footer">« {{ .PrevPage.Title | truncate 50 "..."}}</a>
+      {{ if .Page.Prev }}
+      <a class="link-reverse" href="{{ .Page.Prev.Permalink }}?ref=footer">« {{ .Page.Prev.Title | truncate 50 "..."}}</a>
       {{ end }}
     </div>
 
     <div class="next-post", style="display:inline-block;float:right;">
-      {{ if .NextPage }}
-      <a class="link-reverse" href="{{ .NextPage.Permalink }}?ref=footer">{{ .NextPage.Title | truncate 50 "..." }} »</a>
+      {{ if .Page.Next }}
+      <a class="link-reverse" href="{{ .Page.Next.Permalink }}?ref=footer">{{ .Page.Next.Title | truncate 50 "..." }} »</a>
       {{ end }}
     </div>
 
@@ -72,7 +72,7 @@
   {{ if .Site.Params.showPoweredBy}}
     <p>
       Powered by <a href="https://gohugo.io">Hugo</a> and the
-      <a href="https://github.com/slashformotion/hugo-tufte">Tufte theme</a>.
+      <a href="https://github.com/st3v3nmw/hugo-tufte">Tufte theme</a>.
     </p>
   {{ end }}
 

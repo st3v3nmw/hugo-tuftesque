@@ -48,7 +48,6 @@ code {
 
 /* Content Title styling.  This is mostly to avoid underlying links. */
 h1.content-title {
-    /*max-width: 50rem;*/
     font-size: 4rem;
 }
 h1.content-title a:link,
@@ -76,22 +75,17 @@ h1.content-title a:focus {
     }
     li {
         margin: 0;
-        /*font-size: 95%;*/
     }
 }
 .list-page .list-date {
     display: inline;
     font-size: 0.75em;
-    /* padding-right: 2em; */
-    /* margin-right: 2em; */
 }
 
 table:not(.lntable) {
     margin-top: 1em;
     font-size: 1.4rem;
     width: auto; /* making booktabs style tables the unstyled default in case someone uses Markdown styling */
-    /* margin: 0 auto; */
-    /* border-spacing: 0px; */
     border-top: 2px solid #111;
     border-bottom: 2px solid #111;
 }

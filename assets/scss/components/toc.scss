@@ -15,9 +15,6 @@ details summary.year {
     font-size: 1.5rem;
 }
 
-// details[open] summary {
-// }
-
 
 /* Table of Contents */
 .toc summary {
@@ -26,17 +23,9 @@ details summary.year {
     padding-left: 0;
 }
 
-.toc {
-	// float: right;
-	/*padding: 0rem 1rem 1rem 1rem;*/
-    /*margin-top: 1rem;*/
-	// border-left: 1px solid #eee;
-}
-
 .toc ul {
 	list-style: none;
 	display: block;
-	/*margin-top: 0.75rem;*/
 	padding: 0;
     width: 87.5%;
 }

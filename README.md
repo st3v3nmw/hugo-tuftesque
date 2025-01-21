@@ -93,7 +93,7 @@ You can add links to your social media profile by using thoses parameters:
 - `orcid`: string
 - `google_scholar`: string
 
-Please see [`exampleSite/config.toml`](https://github.com/slashformotion/hugo-tufte/blob/master/exampleSite/config.toml#L30) to see the full implementation with exemples.
+Please see [`exampleSite/config.toml`](https://github.com/slashformotion/hugo-tufte/blob/master/exampleSite/config.toml#L30) to see the full implementation with examples.
 
 ### Page Parameters
 
