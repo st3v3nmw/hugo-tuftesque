@@ -1,14 +1,12 @@
 /* Content meta-data such as author, publication date, etc. */
 .content-meta {
     display: block;
-    /*color: rgba(155, 155, 155, 1);*/
     color: rgba(100, 105, 110, 1);
     font-size: 1.1rem;
     margin-top: 1em;
 }
 
 .content-meta .author {
-    /*color: rgb(90, 20, 55)*/
     color: rgba(65, 70, 75, 1);
 }
 
@@ -16,13 +14,4 @@
     border-radius: 50px;
     float: right;
     margin-left: 1em;
-}
-
-@media (prefers-color-scheme: dark) {
-    .content-meta {
-        color: rgba(150, 150, 150, 1);
-    }
-    .content-meta .author {
-        color: rgba(190, 190, 190, 1);
-    }
 }

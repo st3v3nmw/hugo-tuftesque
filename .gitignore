@@ -1,6 +1,0 @@
-exampleSite/public/*
-*.patch
-exampleSite/resources/_gen/
-node_modules
-package-lock.json
-resources/_gen/
