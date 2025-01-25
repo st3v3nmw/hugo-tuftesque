@@ -3,11 +3,7 @@
 Hugo Tuftesque is a minimalistic blog-like theme for the static site generator [Hugo](https://gohugo.io) that
 implements the [Tufte-CSS](https://github.com/edwardtufte/tufte-css) project.
 
-This is a fork of the [Hugo Tufte Theme](https://github.com/slashformotion/hugo-tufte) with some modifications:
-
-1. Fixes rendering of content on mobile devices
-2. Removes dark mode support
-3. Adds `bluesky` & `linkedin` as socials
+This is a fork of the [Hugo Tufte Theme](https://github.com/slashformotion/hugo-tufte) with some modifications.
 
 I maintain this theme for use on [my personal website](https://www.stephenmwangi.com/). If you need a less opinionated version that stays true to the original fork, please check out [this theme](https://github.com/loikein/hugo-tufte).
 
@@ -106,14 +102,8 @@ Please see [st3v3nmw.github.io/config.toml](https://github.com/st3v3nmw/st3v3nmw
 - `draft` boolean: if `true`, do not display the page on production environments.
 - `type` string: The page's type e.g. "post".
 - `date` string: When the page was written.
-- `hideDate` boolean: if `true`, do not display a page date.  When `meta` is set to
-  `true`, `hideDate` takes greater precedence.
-- `hideReadTime` boolean: if `true`, do not display the page's reading time
-  estimate.  When `meta` is set to `true`, `hideReadTime` takes greater precedence.
 - `math` boolean: if `true`, try to render the page's LaTeX code using MathJax.
-- `meta` boolean: if `true`, display page metadata such as author, date, categories provided
-  these page parameters exist and are not overridden. Content in the `/post` directory,
-  (i.e., pages of type "post") ignore this parameter.
+- `meta` boolean: if `true`, display page metadata such as author, date, tags provided these page parameters exist and are not overridden. Pages of type "post" ignore this parameter and always display metadata.
 - `toc` boolean: if `true`, display the table of contents for the page.
 - `tags` array[string]: The page's tags.
 
@@ -189,3 +179,7 @@ support the features present in the
   ```html
   {{<sidenote>}}Some sidenote{{</sidenote>}}
   ```
+
+### Icons
+
+Icons are provided by the [Font Awesome](https://fontawesome.com/icons) project.

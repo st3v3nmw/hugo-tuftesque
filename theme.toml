@@ -1,10 +1,10 @@
-name = "Tufte"
+name = "Tuftesque"
 license = "MIT"
 licenselink = "https://github.com/st3v3nmw/hugo-tufte/blob/master/LICENSE.md"
 description = "A minimalist blog theme using Tufte-css."
 homepage = "https://github.com/st3v3nmw/hugo-tufte"
 demo = "https://www.stephenmwangi.com/"
-tags = ["blog", "tufte", "minimal", 'light', "personal"]
+tags = ["blog", "tufte", "minimal", "light", "personal"]
 features = ["math", "tufte-css", "tufte"]
 min_version = 0.83
 
