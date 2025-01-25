@@ -1,54 +1,49 @@
-# Tufte Hugo Theme
+# Hugo Tuftesque Theme
 
-Hugo-Tufte is a minimalist blog-like theme for the
-[static site generator Hugo](https://gohugo.io) that
-attempts to be a faithful implementation of the
-[Tufte-css](https://github.com/edwardtufte/tufte-css) project.
-It supports mathematical typesetting via [katex](https://katex.org/) or [MathJax](https://www.mathjax.org).
-By utilizing copious partial templates the theme is largely customizable.
+Hugo Tuftesque is a minimalistic blog-like theme for the static site generator [Hugo](https://gohugo.io) that
+is very similar to the [Tufte-CSS](https://github.com/edwardtufte/tufte-css) project.
 
-- Original repository: [shawnohare/hugo-tufte](https://github.com/shawnohare/hugo-tufte)
-- First fork: [slashformotion/hugo-tufte](https://github.com/slashformotion/hugo-tufte)
-- Second fork: This repository
-- You're probably looking for [loikein/hugo-tufte](https://github.com/loikein/hugo-tufte)
+This is a fork of the [Hugo Tufte Theme](https://github.com/slashformotion/hugo-tufte) with some modifications:
+
+1. Fixes rendering of content on mobile devices
+2. Removes dark mode support
+3. Adds `bluesky` & `linkedin` as socials
+
+I maintain this theme for use on [my personal website](https://www.stephenmwangi.com/). If you need a less opinionated version that stays true to the original fork, please check out [this theme](https://github.com/loikein/hugo-tufte).
 
 ## Quickstart
 
 ### Prerequisite: Hugo Extended
 
-You'll need to install Hugo Extended for this theme to test it locally, since this theme uses SCSS.
-- On Windows:
-  - Using [Chocolatey](https://chocolatey.org/):
-    ```powershell
-    choco install hugo-extended # remember, you might need admin privs
-    ```
+You'll need to install Hugo **Extended** to use this theme since it uses SCSS. Check [this page](https://gohugo.io/installation/) for installation instructions.
 
 ### For a new site
 
-```powershell
-# this code is shell-agnostic, and should work in cmd, powershell, bash, zsh....
-hugo new site <your-site-name> # create your new site with hugo in your pwd
-cd <your-site-name>\themes\    # cd into the themes directory
-git clone <this-git-repo>      # HTTPS link @ the top of the page if you've never done this before
+```console
+$ hugo new site <your-site-name>
+$ cd <your-site-name>/themes/
+$ git clone https://github.com/st3v3nmw/hugo-tuftesque.git
 ```
 
-Add `theme = 'hugo-tufte'` to your `config.toml` to let your site know to actually use _this_ theme, specifically.
+Add `theme = 'hugo-tuftesque'` to your `config.toml` to let your site know to actually use _this_ theme, specifically.
 
-Then run `hugo server -D` and open up `localhost:1313/` or wherever it says in Firefox.
+Then run `hugo server -D` and open up [localhost:1313](http://localhost:1313/) or wherever it says in your browser.
 
 ## Features
 
 ### Math
 
-[Katex](https://katex.org/) or [MathJax](https://www.mathjax.org) renders LaTeX written inside of markdown files. LaTeX can be written more or less as normal. Some examples:
+[Katex](https://katex.org/) or [MathJax](https://www.mathjax.org) renders LaTeX written inside of Markdown files. LaTeX can be written more or less as normal.
 
+Some examples:
 - This `$\frac{1}{2}$` will be rendered inline.
 - A simple displayed equation: `$$f(x, y) := e^{x^2 - y^2}.$$`
 
 There currently seems to be some weirdness with other environments,
-such as the `aligned` environment (`align*` is not supported by katex).  These environments will render provided
-they are wrapped in `<p>` tags and blank lines.  The snippet below should
-render correctly.
+such as the `aligned` environment (`align*` is not supported by katex). These environments will render provided
+they are wrapped in `<p>` tags and blank lines. The snippet below should
+render correctly:
+
 ```latex
 Let $G$ be a finite group with exponent $2$.  Then every element is
 an involution, hence for any $x$, $y$ in $G$ we have:
@@ -72,46 +67,55 @@ The site specific parameters that this theme recognizes are:
 - `subtitle` string: This is displayed under the main title.
 - `showPoweredBy` boolean: if true, display a shoutout to Hugo and this theme.
 - `copyrightHolder` string: Inserts the value in the default copyright notice.
-- `copyright` string: Custom copyright notice.
-- `math` boolean: Site wide kill switch for Latex support
-- `katex` boolean: if "katex" is set to true katex will be used to render LaTex, if not MathJax will be used instead. (Set to `true` by default)
+- `license` string: Shows the license your content is licensed under e.g. "CC BY 4.0". Defaults to "All rights reserved".
+- `math` boolean: Site wide kill switch for Latex support.
+- `katex` boolean: if "katex" is set to true katex will be used to render LaTex, if not MathJax will be used instead. Defaults to `true`.
 - `codeBlocksDark` boolean: if true, code blocks will use a dark theme.
 
-***Socials***
+**_Socials_**
 
-You can add links to your social media profile by using thoses parameters:
+You can add links to your social profiles by using these parameters:
+
 - `github`: string
 - `gitlab`: string
+- `bluesky`: string
 - `twitter`: string
-- `patreon`: string
-- `youtube`: string
 - `medium`: string
-- `reddit`: string
+- `youtube`: string
+- `patreon`: string
 - `stackoverflow`: string
+- `reddit`: string
+- `linkedin`: string
 - `instagram`: string
 - `mastodon`: string
 - `orcid`: string
-- `google_scholar`: string
+- `googleScholar`: string
 
-Please see [`exampleSite/config.toml`](https://github.com/slashformotion/hugo-tufte/blob/master/exampleSite/config.toml#L30) to see the full implementation with examples.
+Please see [st3v3nmw.github.io/config.toml](https://github.com/st3v3nmw/st3v3nmw.github.io/blob/main/config.toml) to see the full implementation with examples.
 
 ### Page Parameters
 
-- `hideDate` boolean: if true, do not display a page date.  When `meta` is set to
-  true, `hideDate` takes greater precedence.
-- `hideReadTime` boolean: if true, do not display the page's reading time
-  estimate.  When `meta` is set to true, `hideReadTime` takes greater precedence.
-- `math` boolean: if true, try to render the page's LaTeX code using MatheJax.
-- `meta` boolean: if true, display page metadata such as author, date, categories provided
-  these page parameters exist and are not overridden.  Content in the `/post` directory,
+- `title` string: The page's title.
+- `subtitle` string: The page's subtitle.
+- `draft` boolean: if `true`, do not display the page on production environments.
+- `type` string: The page's type e.g. "post".
+- `date` string: When the page was written.
+- `hideDate` boolean: if `true`, do not display a page date.  When `meta` is set to
+  `true`, `hideDate` takes greater precedence.
+- `hideReadTime` boolean: if `true`, do not display the page's reading time
+  estimate.  When `meta` is set to `true`, `hideReadTime` takes greater precedence.
+- `math` boolean: if `true`, try to render the page's LaTeX code using MathJax.
+- `meta` boolean: if `true`, display page metadata such as author, date, categories provided
+  these page parameters exist and are not overridden. Content in the `/post` directory,
   (i.e., pages of type "post") ignore this parameter.
-- `toc` boolean: if true, display the table of contents for the page.
+- `toc` boolean: if `true`, display the table of contents for the page.
+- `tags` array[string]: The page's tags.
 
 ### Shortcodes
 
-This theme provides the following shortcodes in an attempt to completely
-support all the features present in the
-[Tufte-css](https://github.com/edwardtufte/tufte-css) project.
+This theme provides the following shortcodes in an attempt to
+support the features present in the
+[Tufte-CSS](https://github.com/edwardtufte/tufte-css) project.
 
 - `blockquote`
   - **Description**: Wrap text in a blockquote and insert optional
@@ -119,22 +123,22 @@ support all the features present in the
   - **Usage**: Accepts the named parameters `cite` and `footer`.
   - **Example**:
   ```html
-  {{< blockquote cite="www.shawnohare.com" footer="Shawn" >}}
+  {{<blockquote cite="www.shawnohare.com" footer="Shawn">}}
     There is nothing more beautiful than an elegant mathematical proof.
-  {{< /blockquote >}}
+  {{</blockquote>}}
   ```
 
 - `div`
-   - **Description**: This shortcode is provided as a work-around for wrapping
-   complex blocks of markdown in div tags. The wrapped text can
-   include other shortcodes
+   - **Description**: This shortcode is provided as a workaround for wrapping
+   complex blocks of markdown in `div` tags. The wrapped text can
+   include other shortcodes.
    - **Usage**: Identical to the `section` shortcode.
    Accepts the style parameters `class` and `id`.
    If only the positional argument `"end"` is passed, a closing tag
    will be inserted.
-   - **Example**: `{{< div class="my-class" >}}` inserts a
+   - **Example**: `{{<div class="my-class">}}` inserts a
    `<div class="my-class">` tag, while
-   `{{<div "end" >}}` inserts the closing `</div>` tag.
+   `{{<div "end">}}` inserts the closing `</div>` tag.
 
 - `epigraph`
   - **Description**: Create an epigraph with the wrapped text.
@@ -153,10 +157,10 @@ support all the features present in the
 
 - `marginnote`
   - **Description**: Wrap text to produce a numberless margin note.
-  - Usage: `{{< marginnote >}}...{{< /marginnote >}}`
+  - Usage: `{{<marginnote>}}...{{</marginnote>}}`
   - **Example**:
   ```html
-  {{< marginnote >}}Some marginnote{{< /marginnote>}}
+  {{<marginnote>}}Some margin note{{</marginnote>}}
   ```
 
 - `section`
@@ -166,16 +170,16 @@ support all the features present in the
    - **Usage**: Accepts the style parameters `class` and `id`.
    If only the positional argument `"end"` is passed, a closing tag
    will be inserted.
-   - **Example**: `{{< section class="my-class" >}}` inserts a
+   - **Example**: `{{<section class="my-class">}}` inserts a
    `<section class="my-class">` tag, while
-   `{{<section "end" >}}` inserts the closing `</section>` tag.
+   `{{<section "end">}}` inserts the closing `</section>` tag.
 
 
 - `sidenote`
   - **Description**: Wrap text to produce an automatically numbered sidenote.
   - **Usage**: identical to `marginnote`
-  `{{< sidenote >}}...{{< /sidenote >}}`
+  `{{<sidenote>}}...{{</sidenote>}}`
   - **Example**:
   ```html
-  {{< sidenote >}}Some sidenote{{< /sidenote >}}
+  {{<sidenote>}}Some sidenote{{</sidenote>}}
   ```
