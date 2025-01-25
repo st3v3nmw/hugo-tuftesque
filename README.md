@@ -1,7 +1,7 @@
 # Hugo Tuftesque Theme
 
 Hugo Tuftesque is a minimalistic blog-like theme for the static site generator [Hugo](https://gohugo.io) that
-is very similar to the [Tufte-CSS](https://github.com/edwardtufte/tufte-css) project.
+implements the [Tufte-CSS](https://github.com/edwardtufte/tufte-css) project.
 
 This is a fork of the [Hugo Tufte Theme](https://github.com/slashformotion/hugo-tufte) with some modifications:
 
@@ -28,6 +28,12 @@ $ git clone https://github.com/st3v3nmw/hugo-tuftesque.git
 Add `theme = 'hugo-tuftesque'` to your `config.toml` to let your site know to actually use _this_ theme, specifically.
 
 Then run `hugo server -D` and open up [localhost:1313](http://localhost:1313/) or wherever it says in your browser.
+
+### Adding content
+
+```console
+$ hugo new content content/blog/the-page-title.md
+```
 
 ## Features
 
