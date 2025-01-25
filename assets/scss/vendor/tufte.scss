@@ -73,7 +73,7 @@ body {
 
 h1 {
     font-weight: 400;
-    margin-top: 4rem;
+    margin-top: 2.1rem;
     margin-bottom: 1.5rem;
     font-size: 3.2rem;
     line-height: 1;
@@ -120,8 +120,8 @@ article {
 }
 
 section {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 p,
@@ -336,27 +336,55 @@ div.table-wrapper {
 }
 
 @media screen and (max-width: 760px) {
+    body {
+        width: 90%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    article {
+        padding: 2.5rem 0rem;
+    }
+
+    section {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    div.epigraph {
+        margin: 0 0;
+    }
+    div.epigraph > blockquote {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     p,
     footer {
-        width: 90%;
+        width: 100%;
     }
+
     pre.code {
         width: 87.5%;
     }
+
     ul {
         width: 85%;
     }
+
     figure {
         max-width: 90%;
     }
+
     figcaption,
     figure.fullwidth figcaption {
         margin-right: 0%;
         max-width: none;
     }
+
     blockquote p,
     blockquote footer {
-        width: 90%;
+        width: 100%;
     }
 }
 
