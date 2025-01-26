@@ -72,7 +72,6 @@ The site specific parameters that this theme recognizes are:
 - `license` string: Shows the license your content is licensed under e.g. "CC BY 4.0". Defaults to "All rights reserved".
 - `math` boolean: Site wide kill switch for Latex support.
 - `katex` boolean: if "katex" is set to true katex will be used to render LaTex, if not MathJax will be used instead. Defaults to `true`.
-- `codeBlocksDark` boolean: if true, code blocks will use a dark theme.
 
 **_Socials_**
 
