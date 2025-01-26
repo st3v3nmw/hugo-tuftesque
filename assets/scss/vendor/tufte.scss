@@ -335,7 +335,7 @@ div.table-wrapper {
     font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     body {
         width: 90%;
         padding-left: 0%;
@@ -439,7 +439,7 @@ label.margin-toggle:not(.sidenote-number) {
     display: none;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
     label.margin-toggle:not(.sidenote-number) {
         display: inline;
     }
