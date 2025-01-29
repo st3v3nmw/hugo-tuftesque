@@ -3,7 +3,7 @@
 Hugo Tuftesque is a minimalistic blog-like theme for the static site generator [Hugo](https://gohugo.io) that
 implements the [Tufte-CSS](https://github.com/edwardtufte/tufte-css) project.
 
-This is a fork of the [Hugo Tufte Theme](https://github.com/slashformotion/hugo-tufte) with some modifications.
+This is a fork of the [Hugo Tufte Theme](https://github.com/slashformotion/hugo-tufte) with some QoL improvements especially on mobile devices.
 
 I maintain this theme for use on [my personal website](https://www.stephenmwangi.com/). If you need a less opinionated version that stays true to the original fork, please check out [this theme](https://github.com/loikein/hugo-tufte).
 
