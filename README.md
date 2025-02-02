@@ -98,13 +98,15 @@ Please see [st3v3nmw.github.io/config.toml](https://github.com/st3v3nmw/st3v3nmw
 
 - `title` string: The page's title.
 - `subtitle` string: The page's subtitle.
-- `draft` boolean: if `true`, do not display the page on production environments.
+- `draft` boolean: If `true`, do not display the page on production environments.
 - `type` string: The page's type e.g. "post".
 - `date` string: When the page was written.
-- `math` boolean: if `true`, try to render the page's LaTeX code using MathJax.
-- `meta` boolean: if `true`, display page metadata such as author, date, tags provided these page parameters exist and are not overridden. Pages of type "post" ignore this parameter and always display metadata.
-- `toc` boolean: if `true`, display the table of contents for the page.
-- `tags` array[string]: The page's tags.
+- `math` boolean: If `true`, try to render the page's LaTeX code using MathJax.
+- `meta` boolean: If `true`, display page metadata such as author, date, tags provided these page parameters exist and are not overridden. Pages of type "post" ignore this parameter and always display metadata.
+- `toc` boolean: If `true`, display the table of contents for the page.
+- `tags` / `categories` array[string]: The page's tags/categories.
+- `hideDate` boolean: If `true`, do not display a page date. When `meta` is set to `true`, `hideDate` takes greater precedence.
+- `hideReadTime` boolean: If `true`, do not display the page's reading time estimate.  When `meta` is set to `true`, `hideReadTime` takes greater precedence.
 
 ### Shortcodes
 
