@@ -67,7 +67,8 @@ establishing that $G$ is abelian.
 The site specific parameters that this theme recognizes are:
 
 - `subtitle` string: This is displayed under the main title.
-- `showPoweredBy` boolean: if true, display a shoutout to Hugo and this theme.
+- `description` string: This is displayed in the description meta tag.
+- `showPoweredBy` boolean: if true, display a shoutout to Hugo and this theme in the footer.
 - `copyrightHolder` string: Inserts the value in the default copyright notice.
 - `license` string: Shows the license your content is licensed under e.g. "CC BY 4.0". Defaults to "All rights reserved".
 - `math` boolean: Site wide kill switch for Latex support.
@@ -98,6 +99,7 @@ Please see [st3v3nmw.github.io/config.toml](https://github.com/st3v3nmw/st3v3nmw
 
 - `title` string: The page's title.
 - `subtitle` string: The page's subtitle.
+- `summary` string: The page's summary. It's displayed in the page's description meta tag.
 - `draft` boolean: If `true`, do not display the page on production environments.
 - `type` string: The page's type e.g. "post".
 - `date` string: When the page was written.
